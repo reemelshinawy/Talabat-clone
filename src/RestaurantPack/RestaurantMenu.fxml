@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<AnchorPane id="AnchorPane" fx:id="parentContainer" prefHeight="750.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="RestaurantPack.RestaurantMenuController">
+   <children>
+      <ImageView fitHeight="750.0" fitWidth="1300.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Res/talabat_back.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="304.0" layoutY="70.0" stylesheets="@../Res/Style.css" text="Restaurant Options" textAlignment="CENTER" textFill="#ff5a00" AnchorPane.topAnchor="70.0">
+         <font>
+            <Font name="Dubai" size="85.0" />
+         </font>
+      </Label>
+      <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="1300.0" AnchorPane.topAnchor="250.0">
+         <children>
+            <VBox fx:id="meals" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <ImageView fitHeight="238.0" fitWidth="180.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Res/meal2.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="TOP_CENTER" prefHeight="70.0" prefWidth="233.0" text="Meals">
+                     <font>
+                        <Font name="Gabriola" size="50.0" />
+                     </font>
+                     <padding>
+                        <Insets top="15.0" />
+                     </padding>
+                  </Label>
+               </children>
+               <HBox.margin>
+                  <Insets right="60.0" />
+               </HBox.margin>
+            </VBox>
+            <VBox fx:id="orders" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <ImageView fitHeight="238.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Res/show2.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="50.0" top="17.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Label alignment="TOP_CENTER" prefHeight="70.0" prefWidth="253.0" text="     Orders">
+                     <font>
+                        <Font name="Gabriola" size="50.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <JFXButton fx:id="Logout" buttonType="RAISED" layoutX="500.0" layoutY="570.0" styleClass="largeButtons" stylesheets="@../Res/Style.css" text="Logout" />
+   </children>
+</AnchorPane>

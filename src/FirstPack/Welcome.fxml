@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane fx:id="parentContainer" prefHeight="750.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FirstPack.WelcomeController">
+    <children>
+        <ImageView fitHeight="751.0" fitWidth="1384.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+              <Image url="@../Res/talabat_clone_I.png" />
+            </image>
+        </ImageView>
+        <Label layoutX="677.0" layoutY="101.0" styleClass="label" stylesheets="@../Res/Style.css" text="Registration" textAlignment="CENTER" />
+        <JFXButton fx:id="btn_signup" buttonType="RAISED" layoutX="727.0" layoutY="280.0" styleClass="largeButtons" stylesheets="@../Res/Style.css" text="Signup " />
+        <JFXButton fx:id="btn_login" buttonType="RAISED" layoutX="726.0" layoutY="415.0" styleClass="largeButtons" stylesheets="@../Res/Style.css" text="Login" />
+        <JFXButton fx:id="btn_credits" buttonType="RAISED" layoutX="820.0" layoutY="545.0" styleClass="creditButtons" stylesheets="@../Res/Style.css" text="Credits" />
+    </children>
+</AnchorPane>

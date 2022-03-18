@@ -1,0 +1,6 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Talabat">
+    <output-path>$PROJECT_DIR$/out/artifacts/Talabat</output-path>
+    <root id="archive" name="Talabat.jar" />
+  </artifact>
+</component>

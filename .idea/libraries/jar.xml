@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="jar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/jar/controlsfx-8.40.11.jar!/" />
+      <root url="jar://$PROJECT_DIR$/jar/controlsfx-samples-8.40.11.jar!/" />
+      <root url="jar://$PROJECT_DIR$/jar/fxsampler-1.0.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/jar/HikariCP-3.4.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/jar/jfoenix-9.0.10.jar!/" />
+      <root url="jar://$PROJECT_DIR$/jar/mysql-connector-java-8.0.22.jar!/" />
+      <root url="jar://$PROJECT_DIR$/jar/ojdbc6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/jar/slf4j-api-1.7.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/jar/slf4j-simple-1.7.9.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

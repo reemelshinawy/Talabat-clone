@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="parentContainer" prefHeight="750.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="RestaurantPack.OrdersController">
+   <children>
+      <ImageView fitHeight="750.0" fitWidth="1300.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Res/talabat_back.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="btnBack" layoutX="-1.0" layoutY="-1.0" prefHeight="48.0" prefWidth="113.0" styleClass="backButton" stylesheets="@../Res/Style.css" text="Back" />
+      <TableView fx:id="tableOrder" layoutX="208.0" layoutY="49.0" prefHeight="653.0" prefWidth="856.0">
+        <columns>
+            <TableColumn fx:id="colOrderNumber" prefWidth="141.59996795654297" text="Order Number" />
+            <TableColumn fx:id="colOrderName" minWidth="8.800018310546875" prefWidth="154.4000244140625" text="Order Name" />
+            <TableColumn fx:id="colNote" prefWidth="182.39999389648438" text="Notes" />
+            <TableColumn fx:id="colDate" prefWidth="109.60003662109375" text="Order Date" />
+            <TableColumn fx:id="colPrice" prefWidth="80.79998779296875" text="Price" />
+            <TableColumn fx:id="colResName" prefWidth="106.39996337890625" text="Restaurnt name" />
+            <TableColumn fx:id="colQuantity" prefWidth="75.0" text="Quantity" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

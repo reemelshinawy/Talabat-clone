@@ -1,0 +1,26 @@
+package Database;
+
+import java.sql.SQLException;
+
+public abstract class User  {
+    private String username;
+    private String password;
+
+    public User(String username, String password) {
+        this.username = username;
+        this.password = password;
+    }
+
+    public abstract int login() throws SQLException;
+
+    public abstract void register() throws SQLException;
+
+
+    public String getUsername() {
+        return username;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+}

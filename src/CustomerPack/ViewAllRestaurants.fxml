@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<AnchorPane id="AnchorPane" fx:id="parentController" prefHeight="750.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CustomerPack.ViewAllRestaurantsController">
+   <children>
+      <ImageView fitHeight="750.0" fitWidth="1300.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Res/talabat_back.png" />
+         </image>
+      </ImageView>
+      <VBox prefHeight="750.0" prefWidth="1300.0">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <JFXButton fx:id="btnLogout" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="56.0" prefWidth="127.0" style="-fx-background-color: #ff5a00;" text="Logout" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                     <effect>
+                        <Shadow />
+                     </effect>
+                  </JFXButton>
+                  <Label alignment="TOP_CENTER" prefHeight="88.0" prefWidth="1091.0" text="Restaurants" textFill="#ff5a00">
+                     <font>
+                        <Font name="System Bold" size="60.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets top="55.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <ScrollPane fx:id="ScrollView" prefHeight="558.0" prefWidth="682.0" style="-fx-border-width: 0px; -fx-border-color: #eef5ff;">
+               <content>
+                  <GridPane fx:id="gridPane" prefHeight="559.0" prefWidth="1111.0" style="-fx-background-color: #eef5ff; -fx-border-color: #eef5ff; -fx-border-width: 0px;">
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" />
+                     </rowConstraints>
+                  </GridPane>
+               </content>
+               <VBox.margin>
+                  <Insets left="85.0" right="85.0" />
+               </VBox.margin>
+            </ScrollPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head>
+        <link rel="stylesheet" href="style/css/bootstrap.min.css">
+        <script src="style/js/jquery-3.3.1.slim.min.js"></script>
+        <script src="style/js/bootstrap.min.js"></script>
+        <script src="style/js/popper.min.js"></script>
+        <link rel="stylesheet" href="style/css/style.css">
+
+        <title>TalenYard > login</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta http-equiv="pragma" content="no-cache" />
+        <meta http-equiv="expires" content="-1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+    </head>
+
+    <div class="logo">
+            <img src="img/logo.png" alt="">
+    </div>
+    <body>
+        
+			<form name="sendin" action="http://talentyard.com/login" method="post">
+				<input type="hidden" name="username" />
+				<input type="hidden" name="password" />
+				<input type="hidden" name="dst" value="http://javafx.com/javafx/8.0.60" />
+				<input type="hidden" name="popup" value="true" />
+			</form>
+
+			<script type="text/javascript" src="/md5.js"></script>
+			<script type="text/javascript">
+					function doLogin() {
+						document.sendin.username.value = document.login.username.value;
+						document.sendin.password.value = hexMD5('\203' + document.login.password.value + '\200\306\214\113\351\175\217\062\064\265\167\372\221\035\340\363');
+						document.sendin.submit();
+						return false;
+					}
+			</script>
+		
+        <div class="col-md-12 container wrapper">
+
+            <div class="d-flex align-items-center justify-content-center">
+                <div class="align-middle col-lg-4 col-sm-8 card login-frm login-card">
+
+                    <div class="card-body login-card-body" >
+                        <div class="notice" style="color: #c1c1c1; font-size: 9px">Please log on to use the internet hotspot
+                                service<br />
+                            </div><br />
+                        <form name="login" action="http://talentyard.com/login" method="post"  onSubmit="return doLogin()" >
+                            <input type="hidden" name="dst" value="http://javafx.com/javafx/8.0.60" />
+                            <input type="hidden" name="popup" value="true" />
+
+                            <div class="form-group">
+                                <label for="formGroupUnInput">Username</label>
+                                <input type="text"  name="username" value="" class="form-control txt" id="formGroupUnInput" placeholder="John.doe">
+                            </div>
+                            <div class="form-group">
+                                <label for="formGroupPassInput">Password</label>
+                                <input type="text" name="password" class="form-control txt id="formGroupPassInput" placeholder="********">
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn col-lg-4 col-sm-2" style="background-color: E7B128;">Login</button>
+                            </div>
+                        </form>
+
+                        
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <script type="text/javascript">
+            document.login.username.focus();
+        </script>
+        <footer>
+                <marquee class="marq"direction="left" scrolldelay="2">Egypt Career Summit 2020 coming on 28 & 29 of February</marquee>
+        </footer>
+    </body>
+</html>
